@@ -139,16 +139,6 @@
 }
 
 
-/* including elements with key-value modifiers */
-
-.table__cell_theme_dark {
-    width: 200px;
-    color: white;
-    margin-right: 0;
-    margin-top: 80px;
-}
-
-
 /* DIGITS */
 
 .section-title {
@@ -210,23 +200,16 @@
 
 .feynman {
     position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #F2F2F2;
-}
-
-.image {
-    width: 867px;
-    height: 637px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
+    height: 100vh;
+    background-image: url("../images/feynman.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-color: #f2f2f2;
 }
 
 .feynman__title {
     margin: 0 auto;
+    padding: 100px 0 70px;
     text-align: center;
     width: 775px;
     line-height: 1.15;
@@ -235,7 +218,7 @@
 }
 
 .feynman__subtitle {
-    margin: 70px auto 0;
+    margin: auto 0;
     text-align: center;
     line-height: 51px;
     font-size: 36px;
@@ -245,5 +228,36 @@
 .feynman__link {
     position: absolute;
     right: 48px;
-    height: 50%;
+    top: 50%;
+    text-decoration: none;
+    color: #2F80ED;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+}
+
+.feynman__link::after {
+    content: "→";
+}
+
+.image {
+    width: 867px;
+    height: 637px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 99;
+}
+
+
+/* KAUFMAN */
+
+
+/* including elements with key-value modifiers */
+
+.table__cell_theme_dark {
+    width: 200px;
+    color: white;
+    margin-right: 0;
+    margin-top: 80px;
 }
